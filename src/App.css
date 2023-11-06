@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.Imglouding{
+    width: 100%;
+    position: relative;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.App{
+    background-color: rgba(245, 245, 245, 0.534);
+    width: 40%;
+    border-radius: 1em;
+    text-align: center;
+    position: relative;
+    min-width: 350px;
+}
+.imgCondition{
+    position: relative;
+}
+.imgCondition:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.6);
+}
+.temperature{
+    color:brown
+}
+.Info_{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.Title_{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.Butoom_{
+    font-size: 15px;
+    background-color: rgba(0, 255, 255, 0.301);
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.ImgLouding{
+    background-image: none;
+}
+.From_city{
+    padding: 0.5rem;
+}
+input{
+    text-align: center;
+    background-color:rgba(0, 0, 255, 0.185);
+    color: black;
+    margin: 0 4px 0 0;
+}
+.Button_Shear{
+    border-radius: 2em;
+    color: black;
+    background-color: rgba(0, 0, 255, 0.185);
+}
+.Button_Shear:hover{
+    cursor: pointer;
+    -webkit-transform:scale(1.2);transform:scale(1.1);
+}
+.coop{
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+}
