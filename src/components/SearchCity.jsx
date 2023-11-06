@@ -11,7 +11,7 @@ const SearchCity = ({setLatlog}) => {
       
         if(enter){
         const key = "7ff78a04e7f30fd0bfdcc68b8ee108bd";
-        axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${enter}&limit=5&appid=${key}`)
+        axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${enter}&limit=2&appid=${key}`)
         .then(res => {
             setSearch(res.data[0])
             const lat = res.data[0].lat;
@@ -21,10 +21,8 @@ const SearchCity = ({setLatlog}) => {
         .catch(err => {
             if(search){
                 setError(false)
-                console.log("Esta aqui si")
             }else{
                 setError(true);
-                console.log("Esta aqui else")
             }
         })
     }
